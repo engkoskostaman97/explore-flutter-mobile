@@ -7,9 +7,7 @@ void main() {
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Text('Selamat Datang Flutter'),
-      ),
+      body: Container(child: Center(child: Text('selamat Belajar'))),
     );
   }
 }
