@@ -7,7 +7,16 @@ void main() {
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(child: Center(child: Text('selamat Belajar'))),
+      body: Container(
+          color: Colors.green[700],
+          width: 400.0,
+          height: 200.0,
+          child: Center(
+              child: Text("JANGAN LUPA NGOPI",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                  )))),
     );
   }
 }
