@@ -13,14 +13,14 @@ class HomePage extends StatelessWidget {
           title: Center(child: Text("Engkos App")),
           actions: <Widget>[Icon(Icons.search)],
         ),
-        body: ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              primary: Colors.red, // background
-            ),
-            onPressed: () {},
-            child: Text(
-              "Submit",
-              style: TextStyle(fontSize: 20.0, color: Colors.black),
-            )));
+        body: TextField(
+          obscureText: true,
+          maxLength: 10,
+          decoration: InputDecoration(
+              hintText: "nama saya",
+              labelText: "nama saya",
+              border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20.0))),
+        ));
   }
 }
