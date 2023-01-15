@@ -13,14 +13,17 @@ class HomePage extends StatelessWidget {
           title: Center(child: Text("Engkos App")),
           actions: <Widget>[Icon(Icons.search)],
         ),
-        body: TextField(
-          obscureText: true,
-          maxLength: 10,
-          decoration: InputDecoration(
-              hintText: "nama saya",
-              labelText: "nama saya",
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20.0))),
-        ));
+        body: Image.asset(
+          'images/logo.png',
+          width: 100.0,
+          height: 200.0,
+        )
+        // Image(
+        //   image: NetworkImage(
+        //       "https://images.unsplash.com/photo-1569226022944-7c948d846270?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60"),
+        //   height: 100.0,
+        //   width: 100.0,
+        // )
+        );
   }
 }
