@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -47,6 +45,22 @@ class HomePage extends StatelessWidget {
                 ),
               )
             ],
+          ),
+          Card(
+            color: Colors.blue,
+            child: Column(
+              children: <Widget>[
+                Icon(
+                  Icons.home,
+                  size: 30.0,
+                  color: Colors.white,
+                ),
+                Text(
+                  "home",
+                  style: TextStyle(color: Colors.white, fontSize: 20.0),
+                )
+              ],
+            ),
           )
         ],
       ),
