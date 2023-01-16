@@ -5,6 +5,7 @@ void main() {
 }
 
 class HomePage extends StatelessWidget {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -61,9 +62,19 @@ class HomePage extends StatelessWidget {
                 )
               ],
             ),
-          )
+          ),
+          PageIcon()
         ],
       ),
+    );
+  }
+}
+
+class PageIcon extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Text("Class PageIcon"),
     );
   }
 }
