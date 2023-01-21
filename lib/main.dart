@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'Page/icon.dart';
+
 void main() {
   runApp(MaterialApp(home: HomePage()));
 }
@@ -47,22 +49,11 @@ class HomePage extends StatelessWidget {
               )
             ],
           ),
-          Card(
-            color: Colors.blue,
-            child: Column(
-              children: <Widget>[
-                Icon(
-                  Icons.home,
-                  size: 30.0,
-                  color: Colors.white,
-                ),
-                Text(
-                  "home",
-                  style: TextStyle(color: Colors.white, fontSize: 20.0),
-                )
-              ],
-            ),
+          Text(
+            "ENGKOS",
+            style: TextStyle(height: 2.0, fontSize: 20.0, color: Colors.blue),
           ),
+          CardIcon(),
           PageIcon()
         ],
       ),
